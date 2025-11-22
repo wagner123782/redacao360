@@ -1,7 +1,7 @@
 // components/AdvancedCustomCursor.tsx
 "use client";
 
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState } from "react";
 
 const AdvancedCustomCursor: React.FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

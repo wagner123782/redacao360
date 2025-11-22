@@ -1,6 +1,9 @@
 "use client";
 
-import Header from "./components/Header";
+// import Header from "./components/Header";
+
+import React from "react";
+import Image from "next/image";
 
 export default function HomePage() {
   const links = [
@@ -88,9 +91,11 @@ export default function HomePage() {
               <div className="flex justify-center mb-6">
                 <div className="relative">
                   <div className="bg-blue-900/30 p-4 rounded-full shadow-lg backdrop-blur-sm border border-blue-800/50 w-50 h-50 flex items-center justify-center relative z-10 transition-transform duration-500 ease-in-out hover:rotate-180">
-                    <img
+                    <Image
                       src="/LOGOCurso-removebg-preview.png"
                       alt="Redação 360°"
+                      width={200}
+                      height={200}
                       className="w-50 h-50 object-contain"
                     />
                   </div>
@@ -98,7 +103,6 @@ export default function HomePage() {
                   <div className="absolute -inset-2 bg-blue-500/20 blur-lg rounded-full animate-pulse"></div>
                 </div>
               </div>
-
               <div className="relative perspective-1000">
                 <h1 className="text-5xl font-bold mb-6 relative z-10 transform-style-preserve-3d hover:rotate-x-12 transition-transform duration-700">
                   <span className="text-white relative inline-block">
@@ -115,7 +119,7 @@ export default function HomePage() {
                   </span>
                 </h1>
               </div>
-
+              jk
               {/* Efeito de brilho atrás do título */}
               <div className="absolute -inset-4 bg-blue-500/20 blur-xl rounded-full animate-pulse"></div>
             </div>

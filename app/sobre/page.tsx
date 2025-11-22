@@ -2,6 +2,7 @@
 
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 
 const SobreNos: React.FC = () => {
   return (
@@ -70,9 +71,11 @@ const SobreNos: React.FC = () => {
               <div className="flex justify-center mb-6">
                 <div className="relative">
                   <div className="bg-blue-900/30 p-4 rounded-full shadow-lg backdrop-blur-sm border border-blue-800/50 w-32 h-32 flex items-center justify-center relative z-10 transition-transform duration-500 ease-in-out hover:rotate-180">
-                    <img
+                    <Image
                       src="/LOGOCurso-removebg-preview.png"
                       alt="Redação 360°"
+                      width={112}
+                      height={112}
                       className="w-28 h-28 object-contain"
                     />
                   </div>
@@ -145,7 +148,7 @@ const SobreNos: React.FC = () => {
                 {/* Destaque da Missão */}
                 <div className="mt-6 p-6 bg-yellow-500/10 border border-yellow-500/20 rounded-xl backdrop-blur-sm">
                   <blockquote className="text-xl md:text-2xl font-bold text-yellow-300 text-center italic">
-                    "Mais que um curso, somos um projeto de vida."
+                    &quot;Mais que um curso, somos um projeto de vida.&quot;
                   </blockquote>
                 </div>
               </div>
@@ -235,8 +238,8 @@ const SobreNos: React.FC = () => {
                 </div>
 
                 <p className="text-gray-300 text-center italic">
-                  "A combinação de excelência técnica com suporte humano é a
-                  fórmula para a alta performance."
+                  &quot;A combinação de excelência técnica com suporte humano é
+                  a fórmula para a alta performance.&quot;
                 </p>
               </div>
             </section>
